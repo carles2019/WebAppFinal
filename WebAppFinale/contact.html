@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Food Website Design</title>
+    <meta name="viewport" content="width=device,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="spa.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSj3F5S_7ExVGgrF1eVIyWbRJE7iJHRZ301gRELy4fOKu2WAeki&usqp=CAU" alt="">
+            </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="closeMenu()"></i>
+
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="about.html">
+                        <li>About</li>
+                    </a>
+                    <a href="recipe.html">
+                        <li>Recipe</li>
+                    </a>
+                    <a href="gallery.html">
+                        <li>Gallery</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+                <button type="button" class="btn">Sign Up </button>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </div>
+
+        <div class="vertical-bar">
+            <div class="search-icon">
+                <i class="fa fa-list"></i>
+                <i class="fa fa-search"></i>
+                <div class="social-icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-pinterest"></i>
+                    <i class="fa fa-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="poland">Poland</option>
+                    <option value="canada">Canada</option>
+                    <option value="zimbabwe">Zimbabwe</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>
